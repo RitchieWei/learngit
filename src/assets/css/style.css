@@ -1,0 +1,223 @@
+/*项目自定义样式*/
+
+/*****暂无内容*****/
+.list_box_no_conent {
+  display: none;
+  text-align: center;
+  padding-top: 2.8rem;
+  line-height: 0.8rem;
+}
+
+.list_box_no_ico {
+  width: 1.5rem;
+  height: auto;
+}
+
+.list_box_no_text {
+  font-size: 0.3rem;
+  color: #ababab;
+}
+
+/**添加自定义icon***/
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1493792397270'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1493792397270#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/iconfont.woff?t=1493792397270') format('woff'), /* chrome, firefox */ url('../fonts/iconfont.ttf?t=1493792397270') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/iconfont.svg?t=1493792397270#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*有效宽度*/
+.mainW {
+  width: 6.9rem;
+  margin: auto;
+}
+
+/*公用按钮*/
+.submitBtn-wrap {
+  margin-top: 0.5rem;
+}
+
+.submitBtn-wrap .weui-btn {
+  width: 6.9rem;
+  height: 0.8rem;
+  border: 1px solid rgba(242, 75, 59, 1);
+  border-radius: 39px;
+  background-color: rgba(242, 75, 59, 1);
+  box-shadow: 0 6px 20px 0 rgba(242, 75, 59, 0.25);
+  font-size: 0.3rem;
+}
+
+.submitBtn-wrap .weui-btn:after {
+  border: none;
+}
+
+.submitBtn-wrap .weui-btn:active {
+  background: rgba(242, 75, 59, 1);
+}
+
+.submitBtn-wrap .weui-btn_primary:not(.weui-btn_disabled):active {
+  background-color: #f24b3b !important;
+  border: 1px solid #f24b3b !important;
+}
+
+.submitBtn-wrap .weui-btn_loading.weui-btn_primary {
+  background-color: #f24b3b !important;
+}
+
+.submitBtn-wrap .weui-btn_disabled {
+  border: none;
+}
+
+.weui-btn_disabled.weui-btn_primary{
+  background-color:#cccccc!important;
+}
+
+/*重写确认框样式（需要在外包一层div）*/
+.common-confirm div.weui-dialog {
+  width: 5.8rem;
+  max-width: 5.8rem;
+  height: 2.65rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px !important;
+}
+
+.common-confirm div.weui-dialog .weui-dialog__hd {
+  position: relative;
+  height: 0.44rem;
+}
+
+.common-confirm div.weui-dialog .weui-dialog__hd .weui-dialog__title {
+  position: absolute;
+  top: 0.28rem;
+  left: 0;
+  width: 100%;
+  height: 0.3rem;
+  font-weight: normal;
+  font-size: 0.32rem;
+}
+
+.common-confirm div.weui-dialog .weui-dialog__bd {
+  position: absolute;
+  top: 1.04rem;
+  width: 100%;
+  padding: 0 0 !important;
+}
+
+.common-confirm div.weui-dialog .weui-dialog__ft {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem !important;
+  margin: 0 0 !important;
+  font-size: 0.32rem;
+}
+
+/*单个按钮提示--根据comfirm改进过来*/
+.common-confirm-sure .weui-dialog__ft a:first-child {
+  display: none;
+}
+
+.common-confirm-sure .weui-dialog__ft .weui-dialog__btn_primary {
+  color: #333 !important;
+}
+
+.weui-cells_radio {
+  font-size: 14px !important;
+}
+
+/*cell固定行高*/
+.weui-cell {
+  line-height: 1.1rem;
+  padding: 0 15px !important;
+}
+
+/*警告图标*/
+.warn-icon:before {
+  content: '!';
+  display: inline-block;
+  width: 0.26rem;
+  height: 0.26rem;
+  margin-right: 0.08rem;
+  padding: 1px;
+  line-height: 1.3;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #ffa200;
+  border: 1px solid #ffa200;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.h_orangeCircle {
+  font-size: 0.14rem;
+  color: #ffa200;
+  border: 1px solid #ffa200;
+  padding: 2px 0.11rem;
+  border-radius: 14px;
+  margin-left: 3px;
+}
+
+/*start---选择银行卡弹窗*/
+.bank-list-wrap .weui-dialog {
+  width: 5rem;
+  height: 4.8rem;
+  max-width: none;
+  overflow-y: scroll;
+  border-radius: 8px !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+.bank-list-wrap .weui-dialog p {
+  line-height: 1rem;
+}
+
+.bank-list-wrap .weui-dialog .weui-cell {
+  padding: 0.25rem 15px;
+}
+
+.bank-list-wrap .vux-label {
+  text-align: left;
+}
+
+.bank-list-wrap weui-cell {
+  padding: 0 20px;
+}
+
+/*end*/
+
+/*start---checkIcon样式*/
+.weui-icon-success-circle {
+  color: #f24b3b!important;
+}
+
+.weui-icon-success-circle:before {
+  color: #f24b3b!important;
+}
+
+/*end*/
+
+/*input在有数据填充时填充颜色*/
+.vux-x-input input[disabled='disabled']{
+  color: #333333!important;
+  opacity:1;
+  -webkit-text-fill-color: #333333;
+}
+
+/*vux选择器选中值字体颜色*/
+.vux-popup-picker-value.vux-cell-value{
+  color: #333333!important;
+}
+
+
+
+

@@ -1,0 +1,100 @@
+/*针对项目基础样式及重写vux公共样式*/
+
+body{ background: #efeff4; color: #333;}
+i,em{ font-style: normal;}
+img{ width: 100%;height:auto;}
+ul,li{list-style: none;}
+
+
+
+/*针对vux ui重写全局样式*/
+
+/*重写swiper*/
+.vux-slider > .vux-indicator-center{bottom: -15px!important;}
+.vux-slider > .vux-indicator > a > .vux-icon-dot{
+  opacity: 0.5;
+}
+.vux-slider > .vux-indicator > a > .vux-icon-dot.active{
+  background-color: #fff!important;
+  opacity: 1;
+}
+.vux-slider > .vux-indicator > a > .vux-icon-dot, .vux-slider .vux-indicator-right > a > .vux-icon-dot{
+  width:0.14rem!important;
+  height:0.14rem!important;
+}
+
+
+/**重置weui样式**/
+.weui-label{font-size: 0.32rem!important;}
+.weui-cell_warn .weui-label{ color: #333;}
+.weui-cells{font-size: 0.32rem !important; padding:5px 0!important; background: none!important;}
+.weui-cells:before,.weui-cells:after{border:0!important;}
+.vux-label{font-size: 0.32rem !important;}
+.weui-dialog{padding: 0; border-radius: 2px !important;}
+.weui-dialog__hd{padding:0!important; }
+.weui-dialog__bd{padding:0.5rem 0.2rem!important;min-height:0!important;}
+.weui-dialog__ft{margin: 0 -10px -10px -10px!important; line-height: 40px !important;}
+.weui-dialog__btn_primary{ color: #52a7ff!important;}
+.weui-toast{ z-index: 500000;background:rgba(17, 17, 17, 0.82)}
+.weui-toast.vux-toast-middle{ max-width: 80%; padding: 0 10px;}
+.weui-tabbar{ background-color: #fff!important;}
+#app .weui-toast{min-height: inherit}
+:-moz-placeholder {  color: #ccc; opacity:1;  }
+::-moz-placeholder {  color: #ccc;opacity:1;  }
+input:-ms-input-placeholder{  color: #ccc;opacity:1;  }
+input::-webkit-input-placeholder{  color: #ccc;opacity:1;  }
+.weui-tabbar:before{ border-top:1px solid #e7e7e7;}
+
+
+
+/**重置weui样式**/
+
+.h_dialog_box .weui-dialog {border-radius: 10px !important; }
+
+/**公共底部**/
+[class^="weui-icon-"]:before, [class*=" weui-icon-"]:before{ margin: 0!important;}
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon > i, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label{ color: #f24b3b!important;}
+.weui-tabbar__icon{width: 27px;height:27px;}
+.weui-tabbar__label{font-size: 13px;}
+.weui-tabbar__icon > sup{top:0;left:110%;}
+/**公共底部**/
+
+/**上下拉滚动加载样式**/
+.xs-plugin-pullup-container{ font-size: 0.25rem!important;}
+.rotate {  display: inline-block;  transform: rotate(-180deg);  }
+.pulldown-arrow,.pullup-arrow {  color: #666;  font-size: 0.45rem; }
+.pullupnomore{ color: #999; text-align: center; font-size: 0.28rem; line-height: 40px; display: none;}
+/**上下拉滚动加载样式**/
+
+/**标题样式修改**/
+.vux-header{ background: none;}
+.vux-header .vux-header-title, .vux-header h1 {line-height: 42px;height: 42px;}
+.vux-label {  font-size: 0.32rem !important;  }
+.vux-header .vux-header-left .left-arrow:before {width: 11px;height: 11px;border: 1.5px solid #fff;border-width: 1.5px 0 0 1.5px;top: 8px;}
+/**导航条*标题样式修改**/
+.vux-label {font-size:14px;color:#333;}
+.weui-cells {  margin-top: 0px!important;padding: 0px 0 !important;  }
+
+
+/*!*重写swiper*!
+.vux-slider > .vux-indicator-center{bottom: -15px!important;}
+.vux-slider > .vux-indicator > a > .vux-icon-dot{
+  opacity: 0.5;
+}
+.vux-slider > .vux-indicator > a > .vux-icon-dot.active{
+  background-color: #fff!important;
+  opacity: 1;
+}
+
+!*公用按钮*!
+.submitBtn-wrap {margin-top: 0.5rem;}
+.submitBtn-wrap .weui-btn{width: 6.9rem; height: 0.8rem; border: 1px solid rgba(242, 75, 59, 1); border-radius: 39px;  background-color: rgba(242, 75, 59, 1); box-shadow: 0 6px 20px 0 rgba(242, 75, 59, 0.25); font-size: 0.3rem;}
+.submitBtn-wrap .weui-btn:after {border: none;}
+.submitBtn-wrap .weui-btn:active {background:  rgba(242, 75, 59, 1);}
+
+.weui-cells_radio{font-size: 14px!important;}*/
+
+
+
+
+
